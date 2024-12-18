@@ -1,0 +1,57 @@
+﻿@model AppUser
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+                <div class="profile-image">
+                    <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                    <p class="profile-name">@Model.Fullname</p>
+                    <p class="designation">Administrator</p>
+                </div>
+
+            </a>
+        </li>
+        <li class="nav-item nav-category">
+            <span class="nav-link">Dashboard</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">
+                <span class="menu-title">Dashboard</span>
+                <i class="icon-screen-desktop menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="User" asp-action="Index">
+                <span class="menu-title">User</span>
+                <i class="icon-user menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="Role" asp-action="Index">
+                <span class="menu-title">Role</span>
+                <i class="icon-people menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="Pishing" asp-action="Index">
+                <span class="menu-title">Pishing</span>
+                <i class="icon-user menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="Quiz" asp-action="Index">
+                <span class="menu-title">Quiz</span>
+                <i class="icon-user menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminArea" asp-controller="Education" asp-action="Index">
+                <span class="menu-title">Education</span>
+                <i class="icon-user menu-icon"></i>
+            </a>
+        </li>
+    </ul>
+</nav>

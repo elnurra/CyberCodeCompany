@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Quiz";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Quiz</title>
+    <link rel="stylesheet" href="~/css/quiz.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Cyber Security Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is phishing?</p>
+                <input type="radio" name="q1" value="A type of fishing"> A type of fishing<br>
+                <input type="radio" name="q1" value="A cyber attack using fake websites"> A cyber attack using fake
+                websites<br>
+                <input type="radio" name="q1" value="A type of antivirus software"> A type of antivirus software<br>
+                <input type="radio" name="q1" value="A method to speed up internet"> A method to speed up internet<br>
+            </div>
+            <div class="question">
+                <p>2. What is a common sign of a phishing email?</p>
+                <input type="radio" name="q2" value="Unexpected attachments"> Unexpected attachments<br>
+                <input type="radio" name="q2" value="Professional language"> Professional language<br>
+                <input type="radio" name="q2" value="No spelling errors"> No spelling errors<br>
+                <input type="radio" name="q2" value="Sent from a known contact"> Sent from a known contact<br>
+            </div>
+            <div class="question">
+                <p>3. What is a DDoS attack?</p>
+                <input type="radio" name="q3" value="An attack to delete data"> An attack to delete data<br>
+                <input type="radio" name="q3" value="An attack to disrupt service"> An attack to disrupt service<br>
+                <input type="radio" name="q3" value="An attack to steal information"> An attack to steal information<br>
+                <input type="radio" name="q3" value="An attack to create malware"> An attack to create malware<br>
+            </div>
+            <div class="question">
+                <p>4. What does VPN stand for?</p>
+                <input type="radio" name="q4" value="Virtual Private Network"> Virtual Private Network<br>
+                <input type="radio" name="q4" value="Virtual Public Network"> Virtual Public Network<br>
+                <input type="radio" name="q4" value="Very Private Network"> Very Private Network<br>
+                <input type="radio" name="q4" value="Verified Public Network"> Verified Public Network<br>
+            </div>
+            <div class="question">
+                <p>5. Which of the following is a strong password?</p>
+                <input type="radio" name="q5" value="password123"> password123<br>
+                <input type="radio" name="q5" value="123456"> 123456<br>
+                <input type="radio" name="q5" value="P@ssw0rd!"> P@ssw0rd!<br>
+                <input type="radio" name="q5" value="mypassword"> mypassword<br>
+            </div>
+            <div class="question">
+                <p>6. What is malware?</p>
+                <input type="radio" name="q6" value="Software that helps in network security"> Software that helps in
+                network security<br>
+                <input type="radio" name="q6" value="Malicious software"> Malicious software<br>
+                <input type="radio" name="q6" value="A hardware device for encryption"> A hardware device for
+                encryption<br>
+                <input type="radio" name="q6" value="A programming language"> A programming language<br>
+            </div>
+            <div class="question">
+                <p>7. What is the purpose of a firewall?</p>
+                <input type="radio" name="q7" value="To prevent fires"> To prevent fires<br>
+                <input type="radio" name="q7" value="To block unauthorized access"> To block unauthorized access<br>
+                <input type="radio" name="q7" value="To speed up internet"> To speed up internet<br>
+                <input type="radio" name="q7" value="To store data"> To store data<br>
+            </div>
+            <div class="question">
+                <p>8. What is two-factor authentication?</p>
+                <input type="radio" name="q8" value="A two-step process for logging in"> A two-step process for logging
+                in<br>
+                <input type="radio" name="q8" value="A single password login"> A single password login<br>
+                <input type="radio" name="q8" value="A type of encryption"> A type of encryption<br>
+                <input type="radio" name="q8" value="A method of deleting files"> A method of deleting files<br>
+            </div>
+            <div class="question">
+                <p>9. What is ransomware?</p>
+                <input type="radio" name="q9" value="Software that speeds up computers"> Software that speeds up
+                computers<br>
+                <input type="radio" name="q9" value="Software that demands payment"> Software that demands payment<br>
+                <input type="radio" name="q9" value="A type of antivirus"> A type of antivirus<br>
+                <input type="radio" name="q9" value="A programming language"> A programming language<br>
+            </div>
+            <div class="question">
+                <p>10. What does HTTPS stand for?</p>
+                <input type="radio" name="q10" value="HyperText Transfer Protocol"> HyperText Transfer Protocol<br>
+                <input type="radio" name="q10" value="HyperText Transfer Protocol Secure"> HyperText Transfer Protocol
+                Secure<br>
+                <input type="radio" name="q10" value="HyperText Transfer Privacy Secure"> HyperText Transfer Privacy
+                Secure<br>
+                <input type="radio" name="q10" value="HyperText Transfer Private Secure"> HyperText Transfer Private
+                Secure<br>
+            </div>
+            <div class="question">
+                <p>11. What should employees do if they suspect a phishing attempt?</p>
+                <input type="radio" name="q11" value="Interact with the scammer directly by confronting them and getting down to the bottom of the situation.">
+                A. Interact with the scammer directly by confronting them and getting down to the bottom of the situation.<br>
+                <input type="radio" name="q11" value="Forward the phishing email to a friend or colleague to ask them if they can check the link out first.">
+                B. Forward the phishing email to a friend or colleague to ask them if they can check the link out first.<br>
+                <input type="radio" name="q11" value="Double-check the email ID and the content, then contact your supervisor or the IT department to confirm its authenticity.">
+                C. Double-check the email ID and the content, then contact your supervisor or the IT department to confirm its authenticity.<br>
+                <input type="radio" name="q11" value="Click on the link anyway and see where it takes you.">
+                D. Click on the link anyway and see where it takes you.<br>
+            </div>
+            <div class="question">
+                <p>12. What happens if you click on a phishing email link or attachment?</p>
+                <input type="radio" name="q12" value="Browser/app is closed without any prompt.">
+                A. Browser/app is closed without any prompt.<br>
+                <input type="radio" name="q12" value="You are redirected to a website that asks you to enter sensitive information or directs you to download an attachment.">
+                B. You are redirected to a website that asks you to enter sensitive information or directs you to download an attachment.<br>
+                <input type="radio" name="q12" value="You get an error page on the screen.">
+                C. You get an error page on the screen.<br>
+                <input type="radio" name="q12" value="None of the above">
+                D. None of the above.<br>
+            </div>
+            <div class="question">
+                <p>13. Why do I need to watch out for phishing emails?</p>
+                <input type="radio" name="q13" value="For personal safety and security.">
+                A. For personal safety and security.<br>
+                <input type="radio" name="q13" value="To protect your identity and sensitive information.">
+                B. To protect your identity and sensitive information.<br>
+                <input type="radio" name="q13" value="To prevent being duped and falling for scams.">
+                C. To prevent being duped and falling for scams.<br>
+                <input type="radio" name="q13" value="All of the above.">
+                D. All of the above.<br>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="results-container"></div>
+    </div>
+    <script src="~/js/quiz.js"></script>
+</body>
+</html>
+

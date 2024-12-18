@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset Request</title>
+    <style>
+        /* General styles for email clients */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #212121;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .header img {
+                height: 50px;
+            }
+
+        .content {
+            padding: 16px 24px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #212121;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px;
+        }
+
+            .button:hover {
+                background-color: #212121c7;
+                color: #ffffff;
+            }
+
+        /* Success message styles */
+        #success-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        </div>
+        <div class="content">
+            <h2>Password Reset Request</h2>
+            <p>We received a request to reset your password. If you did not make this request, please ignore this email.</p>
+            <p>To reset your password, click the button below:</p>
+            <a href="{{link}}" class="button" target="_blank">Reset Password</a>
+            <p>If you have any questions or need further assistance, please contact our support team.</p>
+            <p>Thank you,</p>
+            <p>
+                The Support Team<br>
+                Example Company<br>
+                support@example.com
+            </p>
+            <div id="success-message">Your password has been successfully reset!</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('success-message').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

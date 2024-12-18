@@ -1,0 +1,100 @@
+﻿@model DashboardVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-sm-flex align-items-baseline report-summary-header">
+                            <h5 class="font-weight-semibold">Report Summary</h5>
+                            <span class="ml-auto">Updated Report</span>
+                            <button class="btn btn-icons border-0 p-2"><i class="icon-refresh"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row report-inner-cards-wrapper">
+                    <div class="col-md-3 col-xl report-inner-card">
+                        <div class="inner-card-text">
+                            <span class="report-title">Count of Users</span>
+                            <h4>@Model.AppUsers.Count()</h4>
+                        </div>
+                        <div class="inner-card-icon bg-success">
+                            <i class="icon-picture"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl report-inner-card">
+                        <div class="inner-card-text">
+                            <span class="report-title">Count of messages sent</span>
+                            <h4>@Model.LinkTrackers.Count()</h4>
+                        </div>
+                        <div class="inner-card-icon bg-danger">
+                            <i class="icon-user-follow"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl report-inner-card">
+                        <div class="inner-card-text">
+                            <span class="report-title">Count of Clicked</span>
+                            <h4>@Model.LinkTrackers.Where(d => d.isClicked).Count()</h4>
+                        </div>
+                        <div class="inner-card-icon bg-warning">
+                            <i class="icon-music-tone-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h5 class="font-weight-semibold">Link Trackers Details</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>User Email</th>
+                                        <th>Is Clicked</th>
+                                        <th>Clicked At</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.LinkTrackers)
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.userEmail</td>
+                                            <td>@item.isClicked</td>
+                                            @{
+                                                if (item.isClicked)
+                                                {
+                                                    <td>
+                                                        @item.ClickedAt
+                                                    </td>
+                                                }
+                                                else
+                                                {
+                                                    <td>Not Clicked Yet</td>                              
+                                                }
+                                            }
+                                            <td>
+                                                <form asp-action="DeletePhishingRecord" method="post">
+                                                    <input type="hidden" name="id" value="@item.Id" />
+                                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                                </form>
+                                            </td>
+                                            
+                                            
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

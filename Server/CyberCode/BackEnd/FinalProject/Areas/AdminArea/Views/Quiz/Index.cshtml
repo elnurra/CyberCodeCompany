@@ -1,0 +1,25 @@
+﻿@model PhisingCreateVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Create QUIZ Mail</h1>
+<div class="text-center">
+    <img src="~/images/AKM.jpeg" style="width: 185px;" alt="logo">
+    <h2 style="font-size: 30px; ">We are The CYBERCODE Team</h2>
+</div>
+<form asp-controller="Quiz" asp-action="Index" method="post" target="_blank">
+    <br>
+    <p style="font-size: 17px; margin-bottom: 30px; text-align:center">Send a new QUIZ: </p>
+    <br>
+    <div class=" form-outline mb-4">
+        <label asp-for="userEmail">User gmail</label>
+        <input class="form-control" asp-for="userEmail" placeholder="UserGmail">
+        <span class="text-danger" asp-validation-for="userEmail"></span>
+
+    </div>
+    <button type="submit" class="btn btn-outline-success">Submit</button>
+    <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-danger">Cancel</a>
+</form>
+

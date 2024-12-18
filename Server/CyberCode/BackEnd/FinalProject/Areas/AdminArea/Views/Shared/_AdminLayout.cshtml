@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CyberCode Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/Admin/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="~/Admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/Admin/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/Admin/vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="~/Admin/vendors/chartist/chartist.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+
+    <link rel="stylesheet" href="~/Admin/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/images/cyber_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container-scroller">
+
+        @await Component.InvokeAsync("Header")
+
+        <div class="container-fluid page-body-wrapper">
+            @await Component.InvokeAsync("SideNavbar")
+            <div class="main-panel">
+                @RenderBody()
+                @RenderSection("Play",false)
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
+                cybercode.com 2023 © All right are deserved.
+            </span>
+        </div>
+    </footer>
+
+    <script src="~/Admin/vendors/js/vendor.bundle.base.js"></script>
+    <script src="~/Admin/js/off-canvas.js"></script>
+    <script src="~/Admin/js/misc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Cybersecutity Project\\cybercode\\Server\\CyberCode\\BackEnd\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25FEB702-1E2C-409D-B668-E1EBE1C94B59}|FinalProject.csproj|c:\\users\\user\\desktop\\cybersecutity project\\cybercode\\server\\cybercode\\backend\\finalproject\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25FEB702-1E2C-409D-B668-E1EBE1C94B59}|FinalProject.csproj|solutionrelative:views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25FEB702-1E2C-409D-B668-E1EBE1C94B59}|FinalProject.csproj|c:\\users\\user\\desktop\\cybersecutity project\\cybercode\\server\\cybercode\\backend\\finalproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25FEB702-1E2C-409D-B668-E1EBE1C94B59}|FinalProject.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 61,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VerifyEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cybersecutity Project\\cybercode\\Server\\CyberCode\\BackEnd\\FinalProject\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\VerifyEmail.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cybersecutity Project\\cybercode\\Server\\CyberCode\\BackEnd\\FinalProject\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeToolTip": "Views\\Account\\VerifyEmail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T10:14:22.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cybersecutity Project\\cybercode\\Server\\CyberCode\\BackEnd\\FinalProject\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cybersecutity Project\\cybercode\\Server\\CyberCode\\BackEnd\\FinalProject\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAawGUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T10:13:54.415Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
